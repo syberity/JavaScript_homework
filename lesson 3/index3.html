@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../jQuery/jquery-2.1.4.min.js"></script>
+    <script>
+        (function($){
+            $(function(){
+                // Выводим значение option с value=2
+                $('#id').text($('option[value="2"]').text());
+
+                // Или можно так...
+                // var value = $('#myselect').children('option[value="2"]').text();
+                // $('#id').text(value);
+            });
+        })(jQuery);
+    </script>
+</head>
+<body>
+    <select id="myselect">
+        <option value="1">Option-1</option>
+        <option value="2">Option-2</option>
+        <option value="3">Option-3</option>
+    </select>
+    <p id="id"></p>
+</body>
+</html>

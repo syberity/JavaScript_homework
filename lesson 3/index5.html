@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../jQuery/jquery-2.1.4.min.js"></script>
+    <script>
+        (function($){
+            $(function(){
+                // Извлекаем последний li
+                $('#id').text($('li:last').text());
+            });
+        })(jQuery);
+    </script>
+</head>
+<body>
+    <ul>
+        <li>Html Tutorial</li>
+        <li>Mongodb Tutorial</li>
+        <li>Python Tutorial</li>
+    </ul>
+    <p id="id"></p>
+</body>
+</html>
