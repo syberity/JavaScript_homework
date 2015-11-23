@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .error {
+            outline: 1px red solid;
+        }
+    </style>
+    <script src="../jQuery/jquery-2.1.4.min.js"></script>
+    <script src="../jQuery/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="../jQuery/jquery-ui.min.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <form id="form">
+        <fieldset>
+            <legend>Пользователь</legend>
+            <p><label for="username">Имя: </label>
+                <input type="text" id="username" name="username" placeholder="Ваше имя"></p>
+            <p><label for="password">Пароль: </label>
+                <input type="password" id="password" name="password" placeholder="Ваш пароль"></p>
+            <p><label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" placeholder="Ваш e-mail"></p>
+            <p><label>Пол: </label>
+                <input type="radio" id="sex-male" name="gender" checked><label for="sex-male">Мужской</label>
+                <input type="radio" id="sex-female" name="gender"><label for="sex-female">Женский</label></p>
+            <p><label for="ccard">№ кредитной карты: </label>
+                <input type="text" id="ccard" name="credit_card" size="30" placeholder="№ вашей кредитной карты"></p>
+            <p><label for="bio">Био: </label>
+                <input type="text" id="bio" name="bio" placeholder="Ваше био"></p>
+            <p><label for="birthday">Дата рождения: </label>
+                <input type="text" id="birthday" name="birth" placeholder="Ваша дата рождения"></p>
+            <p><button id="button-check-data">Проверка данных</button></p>
+        </fieldset>
+    </form>
+    <p id="errorMessage"></p>
+    <div id="progressbar"></div>
+</body>
+</html>
