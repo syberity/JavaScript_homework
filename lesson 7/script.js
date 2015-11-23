@@ -16,35 +16,35 @@
                         $('#username').removeClass('error');
                     }
                     if (data.error['Password'] != undefined) {
-                        $('#password').addClass('error');
+                        $('#password').addClass('error').effect('shake');
                         errorMessage += '<br>' + data.error['Password'];
                         badFieldCount++;
                     } else {
                         $('#password').removeClass('error');
                     }
                     if (data.error['Email'] != undefined) {
-                        $('#email').addClass('error');
+                        $('#email').addClass('error').effect('shake');
                         errorMessage += '<br>' + data.error['Email'];
                         badFieldCount++;
                     } else {
                         $('#email').removeClass('error');
                     }
                     if (data.error['Credit Card'] != undefined) {
-                        $('#ccard').addClass('error');
+                        $('#ccard').addClass('error').effect('shake');
                         errorMessage += '<br>' + data.error['Credit Card'];
                         badFieldCount++;
                     } else {
                         $('#ccard').removeClass('error');
                     }
                     if (data.error['Bio'] != undefined) {
-                        $('#bio').addClass('error');
+                        $('#bio').addClass('error').effect('shake');
                         errorMessage += '<br>' + data.error['Bio'];
                         badFieldCount++;
                     } else {
                         $('#bio').removeClass('error');
                     }
                     if (data.error['Birth'] != undefined) {
-                        $('#birthday').addClass('error');
+                        $('#birthday').addClass('error').effect('shake');
                         errorMessage += '<br>' + data.error['Birth'];
                         badFieldCount++;
                     } else {
